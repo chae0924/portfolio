@@ -1,3 +1,4 @@
+// svg캐릭터 움직임
 gsap.registerPlugin(); // CustomEase, CustomWiggle을 사용하지 않으므로 플러그인 등록 없음
 
 let dizzyIsPlaying = false; // dizzy 상태 변수
@@ -8,6 +9,7 @@ const meTl = gsap.timeline({
   delay: 1,
 });
 
+// 초기 세팅
 gsap.set(".bg", { transformOrigin: "50% 50%" });
 gsap.set(".ear-right", { transformOrigin: "0% 50%" });
 gsap.set(".ear-left", { transformOrigin: "100% 50%" });
@@ -196,8 +198,26 @@ glassesTilt.to(".glasses", { duration: 0.5, rotate: 10, transformOrigin: "50% 0%
            .to(".glasses", { duration: 0.5, rotate: -6, transformOrigin: "50% 0%" })
            .to(".glasses", { duration: 0.5, rotate: 3, transformOrigin: "50% 0%" })
            .to(".glasses", { duration: 0.5, rotate: -3, transformOrigin: "50% 0%" })
-           .to(".glasses", { duration: 0.5, rotate: 0, transformOrigin: "50% 0%" }); // 원래 위치로 복귀
+           .to(".glasses", { duration: 0.5, rotate: 0, transformOrigin: "50% 0%" });
 
+const mouthAnim = gsap.timeline({ paused: true, repeat: 0 });
+
+mouthAnim.to(".mouth", { duration: 0.3, opacity: 0 }, 0)
+        .to(".smile", { duration: 0.3, opacity: 1 }, 0)
+        .to(".smile", { duration: 0.3, opacity: 0 }, 1)
+        .to(".mouth", { duration: 0.3, opacity: 1 }, 1);
+
+dizzy.to(".mouth", { duration: 0.01, opacity: 0 }, 0)
+    .to(".smile", { duration: 0.01, opacity: 0 }, 0);
+
+// 클릭 시 mouthAnim 실행, dizzy 애니메이션이 실행 중이지 않으면
+document.addEventListener("click", () => {
+  if (!dizzyIsPlaying && !mouthAnim.isActive()) {
+    mouthAnim.restart();
+  }
+});
+
+// 화면 크기 업데이트 함수
 function updateWindowSize() {
   height = window.innerHeight;
   width = window.innerWidth;
@@ -205,3 +225,33 @@ function updateWindowSize() {
 
 updateWindowSize();
 window.addEventListener("resize", updateWindowSize);
+
+
+// svg캐릭터 움직임 끝
+
+document.addEventListener("DOMContentLoaded", function () {
+  const myTab = document.getElementById("myTab");
+
+  myTab.addEventListener("click", function (e) {
+    const target = e.target.getAttribute("href");
+
+    // 탭을 전환할 때마다 모든 카드에서 'show' 클래스 제거
+    const allCards = document.querySelectorAll(".card");
+    allCards.forEach(card => {
+      card.classList.remove("show");
+    });
+
+    if (target === "#content2") {
+      const cards = document.querySelectorAll("#content2 .card");
+
+      // 각 카드를 순차적으로 나타나게 함 (다시 실행)
+      setTimeout(() => {
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add("show");
+          }, index * 100); // 0.1초 간격으로 등장
+        });
+      }, 100); // 첫 번째 실행 지연
+    }
+  });
+});

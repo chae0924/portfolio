@@ -2,15 +2,18 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - lil&#39; me.</title>
+  <title>Chae&#39;s Portfolio.</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.css">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 
 </head>
 <body>
-  <div class="d-flex col-12">
+  <div class="d-flex col-12 flex-column flex-lg-row">
     <!-- 캐릭터 파츠 -->
-    <div class="d-flex col-md-6 col-7 align-items-center justify-content-center flex-column">
+    <div class="d-flex col-lg-6 col-auto align-items-center justify-content-center flex-column">
       <svg viewBox="0 10 211.73 180" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 535 389">
         <defs>
           <clipPath id="background-clip">
@@ -117,6 +120,10 @@
                       <path class="eyebrow-right" d="M292.27,147.04c1.97-.6,10.22-1.13,14.39,1.29s7.54,1.43,3.57-1.95c-3.97-3.39-11.89-3.57-15.59-3.05-3.9.55-6.97,5.11-2.36,3.72Z" style="fill: #514139; stroke-width: 0px;" transform="scale(0.4) translate(0, 52)" />
                       <path class="eyebrow-left" d="M227.87,144.91c-4.17-.76-11.62.43-16.21,3.06s-4.06,5.04.55,2.82c5.75-2.78,16.19-2.17,18.51-1.93,2.95.3,5.23-2.48-2.85-3.95Z" style="fill: #514139; stroke-width: 0px;" transform="scale(0.4) translate(0, 52)" />
                       <path class="mouth" d="M277.08,220.67s-7.92,7.37-22.09,1.64c-6.96-2.81-3.75,1.07-1.44,3.32,6.38,4.26,15.15,4.13,21.72,0,5.11-3.17,6.89-9.01,1.81-4.96Z" style="fill: #f2af97; stroke-width: 0px;" transform="scale(0.4) translate(-2, 52)" />
+
+                      <path class="smile" d="M276.39,216.85c-3.16.75-12.5,2.72-22.18.41-7.3-1.74-2.96,6.13-.65,8.38,6.38,6.19,17,6.74,23.01.88,4.82-4.35,6.94-12.98-.17-9.66Z" style="fill: #f2af97; stroke-width: 0px;" transform="scale(0.4) translate(-2, 52)" opacity="0" />
+
+
                   <path class="oh" opacity="0" d="M105.56,117.06c4-.14,5-2.89,4.7-5.64s-1.88-6.7-4.84-6.62-4.73,4.36-4.9,6.72S101.57,117.19,105.56,117.06Z" fill="#262528" transfrom="translate(0, 15)"/>
                   
                       <path class="nose" d="M263.27,193.36s2.67,3.97.79,10.31c-1.12,3.78.69,1.93,1.79.64,2.02-3.49,2.63-6.67.24-9.98-1.84-2.57-5.12-3.5-2.82-.97Z" style="fill: #eac2b7; stroke-width: 0px;" transform="scale(0.4) translate(-2, 52)" />
@@ -163,38 +170,132 @@
           </g>
         </g>
       </svg>
-      <h6 class="fz-24">최윤서</h6>
-      <p class="fz-18">010-8708-1644</p>
-      <p class="fz-18">ws0924@gmail.com</p>
+      <h6 class="fz-32">최윤서</h6>
+      <h6 class="fz-24 mb-4">UX/UI Designer</h6>
+      <p class="fz-18"><i class="bi bi-telephone"></i> 010-8708-1644</p>
+      <p class="fz-18"><i class="bi bi-envelope-paper"></i> ws0924@gmail.com</p>
     </div>
 
-    <div class="col-md-6 col-2 align-items-center justify-content-center">
+    <div class="col-xl-5 col-auto align-items-center justify-content-center ">
       <!-- 탭 메뉴 -->
-      <ul class="nav nav-tabs fz-18" id="myTab" role="tablist">
+      <ul class="nav nav-tabs fz-20" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">Tab 1</a>
+          <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">Profile</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">Tab 2</a>
+          <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2" role="tab" aria-controls="content2" aria-selected="false">Web Project</a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="false">Tab 3</a>
+          <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#content3" role="tab" aria-controls="content3" aria-selected="false">Design</a>
         </li>
         <li class="nav-item" role="presentation">
+          <a class="nav-link" id="tab4" data-bs-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">Contact me</a>
+        </li>
+        <!-- <li class="nav-item" role="presentation">
           <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+        </li> -->
       </ul>
 
       <!-- 탭 콘텐츠 -->
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content border rounded-end rounded-bottom border-gray h-100 p-3" id="myTabContent">
+        <!-- profile -->
         <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
-          123
+          <p class="fz-24">이름 | 최윤서</p>
+          <p class="fz-24">생년월일 | 2003.09.24</p>
+          <p class="fz-24">연령 | 만 21세</p>
+          <p class="fz-24">주소 | 서울시 구로구 개봉동</p>
+
+          <hr />
+
+          <p class="fz-22 mb-4 lh1-0">
+            <span class="fz-18 text-gray">2022.03 ~ 2024.02</span> &nbsp; 
+            <br />부천대학교 영상&게임콘텐츠학과 졸업
+          </p>
+
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2022.10.02 ~ 2022.10.03</span> &nbsp; 
+            <br />부천국제만화축제 캐리커처 아르바이트
+          </p>
+
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2023.01.30 ~ 2023.10.31</span> &nbsp; 
+            <br />에피소드방탈출 강남점 아르바이트
+          </p>
+          
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2023.12, 2024.12</span> &nbsp; 
+            <br />서울 일러스트레이션 페어 굿즈 제작 및 판매
+          </p>
+
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2024.01.11</span> &nbsp; 
+            <br />서울국제일러스트레이션 공모전 특선 (서울미술협회 발행)
+          </p>
+          
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2024.10.18 ~ 2024.10.20</span> &nbsp; 
+            <br />2024 경기시각디자인 신진디자이너 초대 교류전 작품 전시
+          </p>
+          
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2024.05.16</span> &nbsp; 
+            <br />자동차운전면허 2종 보통 취득
+          </p>
+
+          <p class="fz-22 mb-4 lh1-0b lh1-0">
+            <span class="fz-18 text-gray">2024.06.24 ~ 2024.12.26</span> &nbsp; 
+            <br />[KDT]웹퍼블리서(UIUX)&프론트엔드개발(API,ChatGPT,피그마,리액트,뷰)기업플랫폼프로젝트 과정 수료
+          </p>
+          
         </div>
+
+        <!-- wep project -->
         <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
-          456
+          <div class="d-flex flex-wrap">
+          <div class="card m-2" style="flex: 1 1 200px; max-width: 200px;">
+            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          
+          <div class="card m-2" style="flex: 1 1 200px; max-width: 200px;">
+            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card m-2" style="flex: 1 1 200px; max-width: 200px;">
+            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          
+          <!-- <div class="card m-2" style="flex: 1 1 200px;">
+            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div> -->
         </div>
+
+        </div>
+
+        <!-- design -->
         <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">
           789
+        </div>
+
+        <!-- contact me -->
+        <div class="tab-pane fade" id="content4" role="tabpanel" aria-labelledby="tab4">
+          789 <br>
+          789 <br>
+          789 <br>
+          789 <br>
+
         </div>
       </div>
 
