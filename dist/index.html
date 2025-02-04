@@ -61,15 +61,20 @@
                       />
                     </mask>
                   </defs>
+
+                  <path
+                    class="shadow"
+                    d="M357.13,184.46c-.5,31.15-19.66,91.92-88.9,93.06-59.27.98-97.96-45.8-98.69-89.39-.88-51.95,42.38-99.14,92.99-99.14s95.43,43.52,94.6,95.47Z" style="fill: #5e524c; stroke-width: 0px;"
+                    transform="scale(0.4) translate(-2, 50)"
+                    />
                 
                   <path
                     class="neck"
                     d="M114.26 143.16v-14a9.22 9.22 0 10-18.43 0v14c-15.27 2.84-24.74 15.08-24.74 27.33H139c0-12.24-9.5-24.49-24.74-27.33z"
                     fill="#F4E7DC"
                   />
-                  <!-- 다른 경로에 mask를 적용 -->
+                  
                   <g mask="url(#neckMask)">
-                    <!-- 목 그림자의 경로 -->
                     <path
                       class="shadow"
                       d="M95.82 122.36h18.41v14.31s-10.5 5.54-18.41 0z"
@@ -196,7 +201,7 @@
     
 
       <!-- 탭 콘텐츠 -->
-      <div class="tab-content border rounded-end rounded-bottom border-gray h-100 p-3" id="myTabContent">
+      <div class="tab-content border rounded-end rounded-bottom border-gray p-3" id="myTabContent">
         <!-- profile -->
         <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">
           <p class="fz-24">이름 | 최윤서</p>
@@ -250,51 +255,64 @@
 
         <!-- wep project -->
         <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
-          
-            <div class="card m-2  mb-5" style="flex: 1 1 300px; max-width: 300px;">
-              <img src="https://placehold.co/400x200" class="card-img-top" alt="이미지1">
-              <div class="card-body">
-                <h5 class="card-title">Scent</h5>
-                <h6 class="card-subtitle mb-2 text-muted">맞춤제작 향수 브랜드</h6>
-                <p class="card-text fz-17">부트스트랩을 활용한 웹 페이지 개인제작.
-                  <br />
-                  기획 및 디자인, 반응형 구현.
-                </p>
-              </div>
-            </div>
-          
-          <!-- team pj -->
-          <h6 class="ms-2 fz-22 mb-1 w-100">Team Project</h6>
-          <div class="d-flex flex-wrap">
-            <div class="card m-2" style="flex: 1 1 300px; max-width: 300px;">
-              <img src="https://placehold.co/400x200" class="card-img-top" alt="이미지1">
-              <div class="card-body">
-                <h5 class="card-title">윤슬(yunsul)</h5>
-                <h6 class="card-subtitle mb-2 text-muted">블루뷰티 화장품 브랜드</h6>
-                <p class="card-text fz-17">아이웹 플랫폼을 활용한 웹사이트.
-                  <br />
-                  로고 디자인 및 브랜드 디자인 등 디자인 담당.
-                  <br />
-                  플랫폼의 기능을 활용한 빠른 웹사이트 구축 및 수정의 용이성을 고려한 설계 및 구현.
-                </p>
-              </div>
-            </div>
-            
-            <div class="card m-2" style="flex: 1 1 300px; max-width: 300px;">
-              <img src="https://placehold.co/400x200" class="card-img-top" alt="이미지1">
-              <div class="card-body">
-                <h5 class="card-title">해율(heyul)</h5>
-                <h6 class="card-subtitle mb-2 text-muted">해양수산 이너뷰티 브랜드</h6>
-                <p class="card-text fz-17">리액트를 활용한 반응형 이커머스 웹사이트.
-                  <br />
-                  디자인 팀장으로서 전체적인 웹사이트 디자인과 기획을 담당.
-                </p>
-              </div>
-            </div>
-
+  
+          <!-- Scent card -->
+          <div class="d-flex flex-wrap m-2 mb-5">
+            <a href="https://ws030924.ivyro.net" target="_blank" class="card-link" title="사이트로 이동">
+                <div class="card">
+                    <img src="https://github.com/chae0924/portfolio/blob/main/src/img/scent.png?raw=true" class="card-img-top" alt="scent">
+                    <div class="card-body">
+                        <h5 class="card-title lh1-1">Scent</h5>
+                        <h6 class="card-subtitle mb-3 text-gray">맞춤제작 향수 브랜드</h6>
+                        <p class="card-text fz-17">부트스트랩을 활용한 웹 페이지 개인제작.
+                            <br />
+                            기획 및 디자인, 반응형 구현.
+                        </p>
+                    </div>
+                </div>
+            </a>
           </div>
-
-        </div>
+      
+          <!-- Team Project -->
+          <h6 class="ms-2 fz-22 mb-1 w-100">Team Project</h6>
+          <div class="d-flex flex-wrap m-2 gap-3">
+              
+              <!-- 윤슬 (yunsul) card -->
+              <a href="https://www.i-web.kr/green09/" target="_blank" class="card-link" title="사이트로 이동">
+                  <div class="card">
+                      <img src="https://placehold.co/400x200" class="card-img-top" alt="yunsul">
+                      <div class="card-body">
+                          <h5 class="card-title lh1-3">윤슬(yunsul)</h5>
+                          <h6 class="card-subtitle mb-3 text-gray">블루뷰티 화장품 브랜드</h6>
+                          <p class="card-text fz-17">아이웹 플랫폼을 활용한 웹사이트.
+                              <br />
+                              로고 디자인 및 브랜드 디자인 등 디자인 담당.
+                              <br />
+                              플랫폼의 기능을 활용한 빠른 웹사이트 구축 및 수정의 용이성을 고려한 설계 및 구현.
+                          </p>
+                      </div>
+                  </div>
+              </a>
+              
+              <!-- 해율 (heyul) card -->
+              <a href="https://heayul.vercel.app" target="_blank" class="card-link" title="사이트로 이동">
+                  <div class="card">
+                      <img src="https://placehold.co/400x200" class="card-img-top" alt="heyul">
+                      <div class="card-body">
+                          <h5 class="card-title lh1-3">해율(heyul)</h5>
+                          <h6 class="card-subtitle mb-3 text-gray">해양수산 이너뷰티 브랜드</h6>
+                          <p class="card-text fz-17">리액트를 활용한 반응형 이커머스 웹사이트.
+                              <br />
+                              디자인 팀장으로서 전체적인 웹사이트 디자인과 기획을 담당.
+                          </p>
+                      </div>
+                  </div>
+              </a>
+      
+          </div>
+      
+      </div>
+      
 
         <!-- design -->
         <div class="tab-pane fade" id="content3" role="tabpanel" aria-labelledby="tab3">

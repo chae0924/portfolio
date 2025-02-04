@@ -29,7 +29,7 @@ ol, ul {
 
 /* 링크의 기본 스타일 제거 */
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 

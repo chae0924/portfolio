@@ -186,7 +186,7 @@ svg {
 }
 
 
-.text-gray {color: #acacac;}
+.text-gray {color: #acacac !important;}
 
 ::selection {
   background: #fffbcf;
@@ -217,20 +217,32 @@ svg {
 
 
 .card {
-  opacity: 0; /* 초기 상태: 투명 */
-  transform: translateY(20px); /* 약간 아래에서 시작 */
+  opacity: 0;
+  transform: translateY(20px) scale(1);
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  flex: 1 1 300px;
+  max-width: 300px;
+  height: 100% !important;
+  cursor: pointer;
+  overflow: visible;
 }
 
 .card.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 
-#content2{
-  overflow: hidden;
+.card:hover {
+  transform: translateY(0) scale(1.08);
+  transition: transform 0.1s ease-in;
+  z-index: 10;
 }
 
-.tab-content{
-  min-height: 800px;
+#content2 {
+  overflow: visible;
+}
+
+.tab-content {
+  height: 710px !important;
+  overflow: auto;
 }
