@@ -149,7 +149,7 @@ function animateFace() {
   let yLow = (centeredY / (height / 2)) * 25 - 50;
 
   gsap.to(dom.face, { yPercent: yLow / 30, xPercent: x / 30 });
-  gsap.to(dom.eye, { yPercent: yHigh / 20, xPercent: x / 10 });
+  gsap.to(dom.eye, { yPercent: yLow / 10, xPercent: x * 0.1 });
   gsap.to(dom.innerFace, { yPercent: y / 6, xPercent: x / 8 });
   gsap.to(dom.hairFront, { yPercent: yLow / 30 });
   gsap.to([dom.hairBack, dom.shadow], { yPercent: (yLow / 20) * -1, xPercent: (x / 20) * -1 });

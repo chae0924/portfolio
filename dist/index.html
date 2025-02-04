@@ -2,6 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chae&#39;s Portfolio.</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./style.css">
@@ -173,12 +174,12 @@
       <h6 class="fz-32">최윤서</h6>
       <h6 class="fz-24 mb-4">UX/UI Designer</h6>
       <p class="fz-18"><i class="bi bi-telephone"></i> 010-8708-1644</p>
-      <p class="fz-18"><i class="bi bi-envelope-paper"></i> ws0924@gmail.com</p>
+      <p class="fz-18 mb-lg-0 mb-3"><i class="bi bi-envelope-paper"></i> ws0924@gmail.com</p>
     </div>
 
-    <div class="col-xl-5 col-auto align-items-center justify-content-center ">
+    <div class="col-xl-5 col-auto align-items-center justify-content-center">
       <!-- 탭 메뉴 -->
-      <ul class="nav nav-tabs fz-20" id="myTab" role="tablist">
+      <ul class="nav nav-tabs fz-20 d-flex justify-content-center justify-content-lg-start" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1" role="tab" aria-controls="content1" aria-selected="true">Profile</a>
         </li>
@@ -191,10 +192,8 @@
         <li class="nav-item" role="presentation">
           <a class="nav-link" id="tab4" data-bs-toggle="tab" href="#content4" role="tab" aria-controls="content4" aria-selected="false">Contact me</a>
         </li>
-        <!-- <li class="nav-item" role="presentation">
-          <a class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li> -->
       </ul>
+    
 
       <!-- 탭 콘텐츠 -->
       <div class="tab-content border rounded-end rounded-bottom border-gray h-100 p-3" id="myTabContent">
@@ -207,42 +206,42 @@
 
           <hr />
 
-          <p class="fz-22 mb-4 lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0">
             <span class="fz-18 text-gray">2022.03 ~ 2024.02</span> &nbsp; 
             <br />부천대학교 영상&게임콘텐츠학과 졸업
           </p>
 
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2022.10.02 ~ 2022.10.03</span> &nbsp; 
             <br />부천국제만화축제 캐리커처 아르바이트
           </p>
 
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <!-- <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2023.01.30 ~ 2023.10.31</span> &nbsp; 
             <br />에피소드방탈출 강남점 아르바이트
-          </p>
+          </p> -->
           
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2023.12, 2024.12</span> &nbsp; 
             <br />서울 일러스트레이션 페어 굿즈 제작 및 판매
           </p>
 
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2024.01.11</span> &nbsp; 
             <br />서울국제일러스트레이션 공모전 특선 (서울미술협회 발행)
           </p>
           
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2024.10.18 ~ 2024.10.20</span> &nbsp; 
             <br />2024 경기시각디자인 신진디자이너 초대 교류전 작품 전시
           </p>
           
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2024.05.16</span> &nbsp; 
             <br />자동차운전면허 2종 보통 취득
           </p>
 
-          <p class="fz-22 mb-4 lh1-0b lh1-0">
+          <p class="fz-22 mb-3 mb-lg-4 lh1-0b lh1-0">
             <span class="fz-18 text-gray">2024.06.24 ~ 2024.12.26</span> &nbsp; 
             <br />[KDT]웹퍼블리서(UIUX)&프론트엔드개발(API,ChatGPT,피그마,리액트,뷰)기업플랫폼프로젝트 과정 수료
           </p>
@@ -251,36 +250,49 @@
 
         <!-- wep project -->
         <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+          
+            <div class="card m-2  mb-5" style="flex: 1 1 300px; max-width: 300px;">
+              <img src="https://placehold.co/400x200" class="card-img-top" alt="이미지1">
+              <div class="card-body">
+                <h5 class="card-title">Scent</h5>
+                <h6 class="card-subtitle mb-2 text-muted">맞춤제작 향수 브랜드</h6>
+                <p class="card-text fz-17">부트스트랩을 활용한 웹 페이지 개인제작.
+                  <br />
+                  기획 및 디자인, 반응형 구현.
+                </p>
+              </div>
+            </div>
+          
+          <!-- team pj -->
+          <h6 class="ms-2 fz-22 mb-1 w-100">Team Project</h6>
           <div class="d-flex flex-wrap">
-          <div class="card m-2" style="flex: 1 1 200px; max-width: 200px;">
-            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card m-2" style="flex: 1 1 300px; max-width: 300px;">
+              <img src="https://placehold.co/400x200" class="card-img-top" alt="이미지1">
+              <div class="card-body">
+                <h5 class="card-title">윤슬(yunsul)</h5>
+                <h6 class="card-subtitle mb-2 text-muted">블루뷰티 화장품 브랜드</h6>
+                <p class="card-text fz-17">아이웹 플랫폼을 활용한 웹사이트.
+                  <br />
+                  로고 디자인 및 브랜드 디자인 등 디자인 담당.
+                  <br />
+                  플랫폼의 기능을 활용한 빠른 웹사이트 구축 및 수정의 용이성을 고려한 설계 및 구현.
+                </p>
+              </div>
             </div>
-          </div>
-          
-          <div class="card m-2" style="flex: 1 1 200px; max-width: 200px;">
-            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            
+            <div class="card m-2" style="flex: 1 1 300px; max-width: 300px;">
+              <img src="https://placehold.co/400x200" class="card-img-top" alt="이미지1">
+              <div class="card-body">
+                <h5 class="card-title">해율(heyul)</h5>
+                <h6 class="card-subtitle mb-2 text-muted">해양수산 이너뷰티 브랜드</h6>
+                <p class="card-text fz-17">리액트를 활용한 반응형 이커머스 웹사이트.
+                  <br />
+                  디자인 팀장으로서 전체적인 웹사이트 디자인과 기획을 담당.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="card m-2" style="flex: 1 1 200px; max-width: 200px;">
-            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
           </div>
-
-          
-          <!-- <div class="card m-2" style="flex: 1 1 200px;">
-            <img src="https://placehold.co/400x300" class="card-img-top" alt="이미지1">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div> -->
-        </div>
 
         </div>
 

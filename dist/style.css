@@ -30,18 +30,20 @@ body {
 
 svg {
   flex-shrink: 0;
-  width: 600px;
+  width: 500px;
   max-width: 90vw;
 }
 
-/* 폰트 사이즈 클래스 */
+/* 기본 폰트 사이즈 */
 .fz-6 { font-size: 6px; }
 .fz-8 { font-size: 8px; }
 .fz-10 { font-size: 10px; }
 .fz-12 { font-size: 12px; }
 .fz-14 { font-size: 14px; }
 .fz-16 { font-size: 16px; }
+.fz-17 { font-size: 17px; }
 .fz-18 { font-size: 18px; }
+.fz-19 { font-size: 19px; }
 .fz-20 { font-size: 20px; }
 .fz-22 { font-size: 22px; }
 .fz-24 { font-size: 24px; }
@@ -50,7 +52,84 @@ svg {
 .fz-30 { font-size: 30px; }
 .fz-32 { font-size: 32px; }
 
-/* line-height 클래스 */
+/* 반응형 폰트 크기 */
+@media (max-width: 1200px) {
+  .fz-6 { font-size: 5px; }
+  .fz-8 { font-size: 7px; }
+  .fz-10 { font-size: 9px; }
+  .fz-12 { font-size: 11px; }
+  .fz-14 { font-size: 13px; }
+  .fz-16 { font-size: 15px; }
+  .fz-17 { font-size: 16px; }
+  .fz-18 { font-size: 17px; }
+  .fz-19 { font-size: 18px; }
+  .fz-20 { font-size: 19px; }
+  .fz-22 { font-size: 21px; }
+  .fz-24 { font-size: 22px; }
+  .fz-26 { font-size: 24px; }
+  .fz-28 { font-size: 26px; }
+  .fz-30 { font-size: 28px; }
+  .fz-32 { font-size: 30px; }
+}
+
+@media (max-width: 992px) {
+  .fz-6 { font-size: 5px; }
+  .fz-8 { font-size: 7px; }
+  .fz-10 { font-size: 8px; }
+  .fz-12 { font-size: 10px; }
+  .fz-14 { font-size: 12px; }
+  .fz-16 { font-size: 14px; }
+  .fz-17 { font-size: 15px; }
+  .fz-18 { font-size: 16px; }
+  .fz-19 { font-size: 17px; }
+  .fz-20 { font-size: 18px; }
+  .fz-22 { font-size: 20px; }
+  .fz-24 { font-size: 21px; }
+  .fz-26 { font-size: 23px; }
+  .fz-28 { font-size: 24px; }
+  .fz-30 { font-size: 26px; }
+  .fz-32 { font-size: 28px; }
+}
+
+@media (max-width: 768px) {
+  .fz-6 { font-size: 5px; }
+  .fz-8 { font-size: 6px; }
+  .fz-10 { font-size: 8px; }
+  .fz-12 { font-size: 9px; }
+  .fz-14 { font-size: 11px; }
+  .fz-16 { font-size: 13px; }
+  .fz-17 { font-size: 14px; }
+  .fz-18 { font-size: 15px; }
+  .fz-19 { font-size: 16px; }
+  .fz-20 { font-size: 17px; }
+  .fz-22 { font-size: 19px; }
+  .fz-24 { font-size: 20px; }
+  .fz-26 { font-size: 22px; }
+  .fz-28 { font-size: 23px; }
+  .fz-30 { font-size: 24px; }
+  .fz-32 { font-size: 26px; }
+}
+
+@media (max-width: 576px) {
+  .fz-6 { font-size: 4px; }
+  .fz-8 { font-size: 5px; }
+  .fz-10 { font-size: 7px; }
+  .fz-12 { font-size: 8px; }
+  .fz-14 { font-size: 10px; }
+  .fz-16 { font-size: 12px; }
+  .fz-17 { font-size: 13px; }
+  .fz-18 { font-size: 14px; }
+  .fz-19 { font-size: 15px; }
+  .fz-20 { font-size: 16px; }
+  .fz-22 { font-size: 18px; }
+  .fz-24 { font-size: 19px; }
+  .fz-26 { font-size: 20px; }
+  .fz-28 { font-size: 21px; }
+  .fz-30 { font-size: 22px; }
+  .fz-32 { font-size: 24px; }
+}
+
+/* 기본 line-height */
 .lh0-5 { line-height: 0.5; }
 .lh0-6 { line-height: 0.6; }
 .lh0-7 { line-height: 0.7; }
@@ -62,6 +141,50 @@ svg {
 .lh1-3 { line-height: 1.3; }
 .lh1-4 { line-height: 1.4; }
 .lh1-5 { line-height: 1.5; }
+
+/* 반응형 line-height */
+@media (max-width: 992px) {
+  .lh0-5 { line-height: 0.6; }
+  .lh0-6 { line-height: 0.7; }
+  .lh0-7 { line-height: 0.8; }
+  .lh0-8 { line-height: 0.9; }
+  .lh0-9 { line-height: 1.0; }
+  .lh1-0 { line-height: 1.1; }
+  .lh1-1 { line-height: 1.2; }
+  .lh1-2 { line-height: 1.3; }
+  .lh1-3 { line-height: 1.4; }
+  .lh1-4 { line-height: 1.5; }
+  .lh1-5 { line-height: 1.6; }
+}
+
+@media (max-width: 768px) {
+  .lh0-5 { line-height: 0.7; }
+  .lh0-6 { line-height: 0.8; }
+  .lh0-7 { line-height: 0.9; }
+  .lh0-8 { line-height: 1.0; }
+  .lh0-9 { line-height: 1.1; }
+  .lh1-0 { line-height: 1.2; }
+  .lh1-1 { line-height: 1.3; }
+  .lh1-2 { line-height: 1.4; }
+  .lh1-3 { line-height: 1.5; }
+  .lh1-4 { line-height: 1.6; }
+  .lh1-5 { line-height: 1.7; }
+}
+
+@media (max-width: 576px) {
+  .lh0-5 { line-height: 0.8; }
+  .lh0-6 { line-height: 0.9; }
+  .lh0-7 { line-height: 1.0; }
+  .lh0-8 { line-height: 1.1; }
+  .lh0-9 { line-height: 1.2; }
+  .lh1-0 { line-height: 1.3; }
+  .lh1-1 { line-height: 1.4; }
+  .lh1-2 { line-height: 1.5; }
+  .lh1-3 { line-height: 1.6; }
+  .lh1-4 { line-height: 1.7; }
+  .lh1-5 { line-height: 1.8; }
+}
+
 
 .text-gray {color: #acacac;}
 
