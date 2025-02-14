@@ -30,7 +30,7 @@ ol, ul {
 /* 링크의 기본 스타일 제거 */
 a {
   text-decoration: none !important;
-  color: inherit;
+  color: inherit !important;
 }
 
 h1, h2, h3, h4, h5, h6, p{

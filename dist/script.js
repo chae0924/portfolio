@@ -235,23 +235,21 @@ document.addEventListener("DOMContentLoaded", function () {
   myTab.addEventListener("click", function (e) {
     const target = e.target.getAttribute("href");
 
-    // 탭을 전환할 때마다 모든 카드에서 'show' 클래스 제거
-    const allCards = document.querySelectorAll(".card");
-    allCards.forEach(card => {
-      card.classList.remove("show");
-    });
+    if (!target) return; // href가 없는 요소 클릭 방지
 
-    if (target === "#content2") {
-      const cards = document.querySelectorAll("#content2 .card");
+    const activeTabContent = document.querySelector(target);
+    if (!activeTabContent) return;
 
-      // 각 카드를 순차적으로 나타나게 함 (다시 실행)
-      setTimeout(() => {
-        cards.forEach((card, index) => {
-          setTimeout(() => {
-            card.classList.add("show");
-          }, index * 100); // 0.1초 간격으로 등장
-        });
-      }, 100); // 첫 번째 실행 지연
-    }
+    const allCards = document.querySelectorAll(".tab-pane .card");
+    allCards.forEach(card => card.classList.remove("show"));
+
+    const cards = activeTabContent.querySelectorAll(".card");
+    setTimeout(() => {
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("show");
+        }, index * 100); // 0.1초 간격으로 등장
+      });
+    }, 100); // 첫 번째 실행 지연
   });
 });
