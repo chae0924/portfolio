@@ -264,3 +264,11 @@ svg {
   height: 710px !important;
   overflow: auto;
 }
+
+.linebanner{
+  height: 51%;
+  object-fit: contain;
+  object-position: 50% 50%;
+  transform: scale(1.4);
+  transform-origin: center;
+}
