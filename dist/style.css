@@ -28,7 +28,7 @@ body {
   /* overflow: hidden; */
 }
 
-svg {
+.chae {
   flex-shrink: 0;
   width: 500px;
   max-width: 90vw;
@@ -215,6 +215,7 @@ svg {
 ::-webkit-scrollbar-track {
   background: #f1f1f1; /* 연한 회색 */
   border: none;
+  border-radius: 8px;
 }
 
 /* 스크롤바 핸들 (움직이는 부분) */
@@ -226,6 +227,88 @@ svg {
 /* 스크롤바 핸들에 호버 효과 */
 ::-webkit-scrollbar-thumb:hover {
   background: #2f89ba;
+}
+
+/* #myTab{
+  border-bottom: 2px solid #000;
+} */
+
+.nav-link{
+  background: #c9eca3 !important;
+  border: 2px solid #ffffff !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
+.nav-item .active{
+  background: #3391c4 !important;
+  color: white !important;
+  border: 2px solid #000000 !important;
+  border-bottom: 1px solid #000000 !important;
+}
+
+#myTabContent{
+  border-radius: 0 8px 8px;
+  overflow-x: hidden;
+  border: 2px solid #000 !important;
+}
+
+.skill{
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+
+.grayline{
+  background: #e5e4e4;
+  width: 200px;
+  height: 12px;
+  border-radius:10px;
+}
+
+.stat{
+  background: #494848;
+  height: 12px;
+  border-radius:10px;
+}
+
+.sk2{
+  overflow: hidden;
+}
+
+.figma{
+  width: 90%;
+}
+
+.ps{
+  width: 95%;
+}
+
+.ai{
+  width: 80%;
+}
+
+.ae{
+  width: 70%;
+}
+
+.html{
+  width: 100%;
+}
+
+.css{
+  width: 95%;
+}
+
+.js{
+  width: 70%;
+}
+
+.power{
+  width: 100%;
+}
+
+.git{
+  width: 100%;
 }
 
 
@@ -240,9 +323,10 @@ svg {
   overflow: visible;
 }
 
-.disabled-card {
-  pointer-events: none;
+a:has(.disabled-card) {
+  pointer-events: none !important;
   opacity: 0.5 !important;
+  
 }
 
 .card.show {
@@ -262,7 +346,8 @@ svg {
 
 .tab-content {
   height: 710px !important;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .linebanner{
